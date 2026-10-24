@@ -1,7 +1,26 @@
 <?php
 //1 практика
 
-//ЗАДАНИЕ 1
+// $arr = [
+//     [
+//         ['a', 'b'],
+//         ['c','d'],
+//     ],
+//     [
+//         ['e', 'f'],
+//         ['g','h'],
+//     ],
+//     [
+//         ['i', 'j'],
+//         ['k','l'],
+//     ],
+// ];
+
+// echo $arr[0][0][0];
+// echo $arr[2][1][0];
+
+
+//ЗАДАНИЕ 1 (2)
 //   $arr = [
 //     [
 //       ['1', '2'],
@@ -14,7 +33,20 @@
 //   ];
 // $sum = array_sum($arr[0][0])+(array_sum($arr[0][1])+array_sum($arr[1][0])+array_sum($arr[1][1]));
 // echo $sum;
-// 
+
+
+// $arr = [
+//     'user1' => [
+//         'name' => 'name1',
+//         'age' => 31,
+//     ],
+//     'user2' => [
+//         'name' => 'name2',
+//         'age' => 32,
+//     ],
+// ];
+
+// echo $arr['user2']['name'];
 
 
 
@@ -28,8 +60,6 @@
 // 
 
 
-
-// ЗАДАНИЕ 3
 // $arr = [
 //   [ "name" => "user1", "age" => 30, "salary" => 1000],
 //   [ "name" => "user2", "age" => 31, "salary" => 2000],
@@ -37,7 +67,8 @@
 // ];
 // echo $arr[0]["salary"]+$arr[2]["salary"];
 
-
+// $arr = [['a', 'b', [1,2,3], [4,5]], ['d', ['e', 'f']]];
+// $arr = [['a', 'b', [1,2,3], [4,5],], ['d', ['e', 'f'],],];
 
 // ЗАДАНИЕ 4
 // $arr = [[1, 2, 3, [4, 5, [6, 7]]], [8, [9, 10]]];
@@ -61,6 +92,13 @@
 
 
 
+// $arr = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i'],];
+// foreach ($arr as $sub) {
+//     foreach ($sub as $elem){
+//         echo $elem;
+//     }
+// }
+
 // ЗАДАНИЕ 5
 // $arr = [[1,2,3], [4,5,6,7], [8,9]];
 // $sum = 0;
@@ -72,6 +110,16 @@
 // }
 // echo $sum;
 
+
+
+// $arr = [[['a', 'b'],['c','d'],], [['e', 'f'], ['g', 'h'],], [['i', 'j'], ['k', 'l'],],];
+// foreach ($arr as $sub) {
+//     foreach($sub as $subsub){
+//         foreach ($subsub as $elem) {
+//             echo $elem;
+//         }
+//     }
+// }
 
 
 //ЗАДАНИЕ 6
@@ -102,6 +150,16 @@
 // }
 // echo $sum;
 
+
+// $arr = [
+//     'user1' => ['name' => 'name1', 'age' => 31,],
+//     'user2' => ['name' => 'name2', 'age' => 32,],
+// ];
+// foreach ($arr as $key1 => $sub) {
+//     foreach ($sub as $key2 => $elem) {
+//         echo $key1 . ' ' . $key2 . ' ' . $elem . '<br>';
+//     }
+// }
 
 
 // ЗАДАНИЕ 7
@@ -166,6 +224,13 @@
 // var_dump($arr);
 
 
+
+// $users = [
+//     ['name' => 'user1', 'age' => 31, 'salary' => 1000,], ['name' => 'user2', 'age' => 32, 'salary' => 2000,], ['name' => 'user3', 'age' => 33, 'salary' => 3000,]
+// ];
+// foreach ($users as $user) {
+//     echo $user['name'] . ': ' . $user['salary'] . '$, ' . $user['age'] . '<br>';
+// }
 
 // ЗАДАНИЕ 9
 // $products = [
